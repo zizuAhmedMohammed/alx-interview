@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""Interview challenge Pascal Triangle"""
+
+
 def pascal_triangle(n):
     """
     Return an empty list if n <= 0
