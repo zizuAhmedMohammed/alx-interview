@@ -14,9 +14,6 @@ def pascal_triangle(n):
     """
     triangle = [[1]]
 
-    """ 
-    Loop over each row of the triangle, adding the next row based on the previous row
-    """
     for i in range(1, n):
         """
         Loop over each row of the triangle, adding the next row based on the previous row
@@ -29,7 +26,4 @@ def pascal_triangle(n):
         current_row.append(1)
         triangle.append(current_row)
 
-    """ 
-    Return the completed triangle
-    """
     return triangle
