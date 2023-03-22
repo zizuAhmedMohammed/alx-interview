@@ -18,6 +18,9 @@ def pascal_triangle(n):
     Loop over each row of the triangle, adding the next row based on the previous row
     """
     for i in range(1, n):
+        """
+        Loop over each row of the triangle, adding the next row based on the previous row
+        """
         previous_row = triangle[i - 1]
         current_row = [1]
 
