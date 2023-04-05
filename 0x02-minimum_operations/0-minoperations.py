@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-""" Interview challenge minimum operations """
+""" Python minimum operations challenge"""
 
 
 def minOperations(n):
     """
+    Calculates the fewest number of operations
+    needed to result in exactly n H characters in the file
     Returns an integer
     If n is impossible to achieve, return 0
     """
@@ -12,6 +14,7 @@ def minOperations(n):
     operations = 0
     current = 1
     clipboard = 0
+    
     while current < n:
         if (n - current) % current == 0 and clipboard == current // 2:
             clipboard = current
@@ -20,4 +23,5 @@ def minOperations(n):
         else:
             current += clipboard
             operations += 1
+    
     return operations
