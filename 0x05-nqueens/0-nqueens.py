@@ -97,6 +97,7 @@ def get_solutions():
     group = []
     build_solution(row, group)
 
+
 n = get_input()
 get_solutions()
 
