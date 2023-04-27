@@ -5,9 +5,16 @@ Module for finding solutions to the N queens problem.
 import sys
 
 
-solutions = []  # A list to store all possible solutions to the N queens problem
-n = 0  # Size of the chessboard
-positions = None  # A list of all possible positions on the chessboard
+solutions = []
+"""
+A list to store all possible solutions to the N queens problem
+"""
+n = 0
+"""Size of the chessboard"""
+positions = None
+"""
+A list of all possible positions on the chessboard
+"""
 
 
 def get_input():
@@ -90,7 +97,9 @@ def build_solution(row, group):
 
 
 def get_solutions():
-    """Gets the solutions for the given chessboard size."""
+    """
+    Gets the solutions for the given chessboard size.
+    """
     global positions, n
     positions = list(map(lambda x: [x // n, x % n], range(n ** 2)))
     row = 0
