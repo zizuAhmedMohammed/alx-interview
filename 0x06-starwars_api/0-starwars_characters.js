@@ -1,4 +1,6 @@
 #!/usr/bin/node
+""" Interview Challenge Starwars Characters"""
+
 
 // Store command line arguments in `args` variable
 const args = process.argv;
