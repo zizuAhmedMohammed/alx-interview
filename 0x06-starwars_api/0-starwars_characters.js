@@ -1,5 +1,5 @@
-#!/usr/bin/node
-""" Interview Challenge Starwars Characters"""
+#!/bin/usr/node
+// Interview Challenge Starwars Characters
 
 
 // Store command line arguments in `args` variable
